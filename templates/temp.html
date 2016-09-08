@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 授信目录 {% endblock title %}
+
+{% block main_content %}
+
+<div id="page-wrapper">
+  <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">授信</h1>
+      </div>
+      <!-- /.col-lg-12 -->
+  </div>
+  <!-- /.row -->
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4> 授信目录 </h4>
+              </div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+              
+              {# main #}
+
+              </div>
+              <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+  </div>
+</div>
+{% endblock main_content %}
+
+{% block extra_js %}
+
+  {% load staticfiles %}
+  <script src="{% static 'vendor/jquery/jquery.number.min.js' %}"></script>
+  <script type="text/javascript">
+    $('.number').number(true, 0);
+  </script>
+
+{% endblock extra_js %}
